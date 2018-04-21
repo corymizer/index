@@ -1,0 +1,363 @@
+/* -------------- BASICS ------------------*/
+/* ----------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gingerbold;
+    src: url(../fonts/ginger-bold.otf);
+}
+
+@font-face {
+    font-family: gingerregular;
+    src: url(../fonts/ginger-regular.otf);
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: 0;
+}
+
+body {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: 700;
+}
+
+/* -------------- TITLES -------------------*/
+/* -----------------------------------------*/
+
+
+
+/* -------------- HEADER -------------------*/
+/* -----------------------------------------*/
+.col-lg-6 {
+    margin: 0;
+}
+.color-block {
+    background-image: linear-gradient(#c64c1f,#d32d1f);
+    height: 100vh;
+    margin: 0;
+}
+
+.color-block h1 {
+    color: #fcfcfc;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.color-block p {
+    color: #fcfcfc;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.color-block span {
+    font-weight: 700;
+}
+
+.header-text {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+
+.white-block {
+    height: 100vh;
+    color: #fcfcfc;
+}
+
+.menu-link:link,
+.menu-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #d32d1f;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.menu-link:hover,
+.menu-link:active {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #d32d1f;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    border-bottom: solid 2px #d32d1f;
+}
+
+.description {
+    width: 60%;
+    color: #d32d1f;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 20%;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px), (orientation:portrait) {
+    .color-block {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .header-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .white-block {
+        width: 100%;
+    }
+    
+    .description {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .menu-link {
+        display: none;
+    }
+    
+    .btn-contact,
+    .btn-design {
+        display: none
+    }
+}
+    
+}
+
+/* -------------- BUTTONS ------------------*/
+/* -----------------------------------------*/
+
+.btn-contact {
+    position: absolute;
+    bottom: 2.2%;
+    margin: 0;
+}
+
+.btn-design {
+    position: absolute;
+    bottom: 2.2%;
+    right: 2.3%;
+}
+
+.btn-contact:link,
+.btn-contact:visited {
+    border: solid 1px #d32d1f;
+    text-decoration: none;
+    color: #d32d1f;
+    padding: 10px;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+    color: #fcfcfc;
+    background-image: linear-gradient(#c64c1f,#d32d1f);
+    transition:  background-image .2s;
+    border: solid 1px transparent;
+}
+
+.btn-design:link,
+.btn-design:visited {
+    border: solid 1px #fcfcfc;
+    text-decoration: none;
+    color: #fcfcfc;
+    padding: 10px 18px;
+}
+
+.btn-design:hover,
+.btn-design:active {
+    background-color: #fcfcfc;
+    color: #d32d1f;
+    transition:  background-color .2s;
+    border: solid 1px transparent;
+}
+
+/* -------------- DESIGN SECTION ------------------*/
+/* -----------------------------------------*/
+
+.design-header {
+    width: 100%;
+    height: 300px;
+    background-color: #d32d1f;
+}
+
+.dev-header {
+    width: 100%;
+    height: 300px;
+    background-color: #d32d1f;
+}
+
+.section-design {
+    background-color: #fcfcfc;
+}
+
+.section-design h1 {
+    font-weight: 400;
+    font-size: 6rem;
+    color: #fcfcfc;
+    text-align: center;
+    margin-top: 9%;
+}
+
+.section-design img {
+    width: 100%;
+    height: auto;
+    margin-top: -20%;
+    margin-bottom: 20%;
+}
+
+.design {
+    width: 1140px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px), (orientation:portrait) {
+    
+    .section-design h1 {
+        font-weight: 400;
+        font-size: 4rem;
+        color: #fcfcfc;
+        text-align: center;
+        padding-top: 20%;
+}
+    
+    .section-design img {
+        width: 29.5%;
+        margin-top: -5%;
+        margin-bottom: 7%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* -------------- CONTACT SECTION ------------------*/
+/* -----------------------------------------*/
+
+.section-contact {
+    background-image: linear-gradient(#d32d1f, #c64c1f);
+    height: 500px;
+}
+
+.section-contact h1 {
+    font-weight: 400;
+    font-size: 6rem;
+    color: #fcfcfc;
+    text-align: center;
+    padding-top: 5%
+}
+
+.contact-form {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2%
+}
+
+.name {
+    color: #fcfcfc;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fcfcfc;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.email {
+    color: #fcfcfc;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fcfcfc;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.message {
+    color: #fcfcfc;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fcfcfc;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.submit {
+    color: #fcfcfc;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fcfcfc;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: #fcfcfc;
+    opacity: 1;
+}
+
+.social-media {
+    font-size: 4rem;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.social-icon {
+    color: #fcfcfc;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px), (orientation:portrait) {
+    
+    .section-contact h1 {
+    font-size: 4rem;
+    margin-bottom: 13%;
+    }
+    
+    .contact-form {
+        width: 80%;
+    }
+    
+}
