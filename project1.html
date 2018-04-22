@@ -22,60 +22,63 @@
                     </div>
                 </div>
                 <div class='col-lg-6 white-block'>
-                    <a class='menu-link' href=''>Menu</a>
+                    <a href="#menu" id="toggle"><span></span></a>
+                        <div id="menu">
+                          <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#design">Design</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                          </ul>
+                        </div>
                     <p class='description'>Cleveland Soccer Club is a new club in the National Premier Soccer League, the 4th division of American soccer. After working for 3 years for AFC Cleveland, who ended up folding, I became Creative Director for Cleveland SC.  My duties with the club include creating brand guidelines, creating and executing gameday graphics and advertising material, and managing the creative team within the club.</p>
                 </div>
             </div>
         </header>
         
         <section class='project-photos'>
-            <div class="row-small">
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/goal.gif">
-                        <img src="resources/images/goal.gif" alt="Goal GIF" style="width:100%">
-                      </a>
-                    </div>
+            <div class="row-photo">
+                  <div class="container">
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      <img id="expandedImg" style="width:100%">
+                      <div id="imgtext"></div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/traininggear.jpg">
-                        <img src="resources/images/traininggear.jpg" alt="Training Gear" style="width:100%">
-                      </a>
-                    </div>
+                
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/fulltime.jpg" style="width:100%" onclick="myFunction(this);">
                   </div>
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/fulltime.jpg">
-                        <img src="resources/images/fulltime.jpg" alt="Full Time" style="width:100%">
-                      </a>
-                    </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/traininggear.jpg" style="width:100%" onclick="myFunction(this);">
                   </div>
-                </div>
-            <div class="row-small">
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/goal.gif">
-                        <img src="resources/images/goal.gif" alt="Goal GIF" style="width:100%">
-                      </a>
-                    </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/goal.gif" style="width:100%" onclick="myFunction(this);">
                   </div>
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/traininggear.jpg">
-                        <img src="resources/images/traininggear.jpg" alt="Training Gear" style="width:100%">
-                      </a>
-                    </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/seasontickets.jpg" style="width:100%" onclick="myFunction(this);">
                   </div>
-                  <div class="col-lg-4">
-                    <div class="thumbnail">
-                      <a href="resources/images/fulltime.jpg">
-                        <img src="resources/images/fulltime.jpg" alt="Full Time" style="width:100%">
-                      </a>
-                    </div>
-                  </div>
-                </div>
+            </div>
+
+                <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+                </script>
         </section>
+        <footer>
+            <div class='row'>
+                <div class='col-lg-12'>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
     </body>
 
 </html>

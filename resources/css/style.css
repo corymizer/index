@@ -1,3 +1,7 @@
+/* #d32d1f - Red Color 
+   #fcfcfc - White Color */
+
+
 /* -------------- BASICS ------------------*/
 /* ----------------------------------------*/
 
@@ -105,8 +109,18 @@ span {
     font-size: 1.5rem;
     text-align: center;
     position: absolute;
-    top: 38%;
+    top: 33%;
     left: 20%;
+}
+
+.email-link:link,
+.email-link:visited {
+    color: #404040;
+}
+
+.email-link:hover,
+.email-link:active {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 800px), (orientation:portrait) {
@@ -460,4 +474,66 @@ li a:focus {
   background: #d32d1f;
   color: #fcfcfc;
   text-decoration: none;
+}
+
+/* -------------- LAYOUT GRID ------------------*/
+/* -----------------------------------------*/
+
+/* Style the images inside the grid */
+
+.row-photo {
+    width: 1140px;
+    margin: 40px auto 0 auto;
+}
+.photo-col img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.photo-col img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row-photo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+    width: 1140px;
+    margin-bottom: 40px;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* -------------- FOOTER -------------------*/
+/* -----------------------------------------*/
+
+footer .row {
+    width: 100%;
+    height: 100px;
+    background-color: #d32d1f;
+    margin-top: 40px;
 }
