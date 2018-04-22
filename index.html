@@ -15,7 +15,7 @@
     
     <body>
         <header>
-            <div class='row'>
+            <div id='top' class='row'>
                 <div class='col-lg-6 color-block'>
                     <div class='header-text'>
                         <h1>Cory <span>Mizer</span></h1>
@@ -23,10 +23,18 @@
                     </div>
                 </div>
                 <div class='col-lg-6 white-block'>
-                    <a class='menu-link' href=''>Menu</a>
+                    <a href="#menu" id="toggle"><span></span></a>
+                        <div id="menu">
+                          <ul>
+                            <li><a href="#top">Top</a></li>
+                            <li><a href="#design">Design</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                          </ul>
+                        </div>
                     <p class='description'>My name is Cory Mizer and I am a Graphic Designer and Web Developer from the Cleveland, Ohio metro area.  I enjoy creating clean, beautiful websites and graphics using Adobe Illustrator and Photoshop, HTML5, CSS3, SASS, Javascript, Jquery, Bootstrap, and more. See some of my work below! Looking to hire or have a question? Shoot me a message!</p>
                 </div>
             </div>
+            <script src="resources/javascript/toggle.js"></script>
         </header>
         
         <section id='design' class='section-design'>
