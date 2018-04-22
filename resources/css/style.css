@@ -47,13 +47,9 @@ span {
     font-weight: 700;
 }
 
-/* -------------- TITLES -------------------*/
-/* -----------------------------------------*/
-
-
-
 /* -------------- HEADER -------------------*/
 /* -----------------------------------------*/
+
 .col-lg-6 {
     margin: 0;
 }
@@ -151,52 +147,6 @@ span {
     
 }
     
-}
-
-/* -------------- BUTTONS ------------------*/
-/* -----------------------------------------*/
-
-.btn-design {
-    position: absolute;
-    bottom: 2.2%;
-}
-
-.btn-contact {
-    position: absolute;
-    bottom: 2%;
-}
-
-.btn-contact:link,
-.btn-contact:visited {
-    border: solid 1px #d32d1f;
-    text-decoration: none;
-    color: #d32d1f;
-    padding: 10px;
-}
-
-.btn-contact:hover,
-.btn-contact:active {
-    color: #fcfcfc;
-    background-image: linear-gradient(#c64c1f,#d32d1f);
-    transition:  background-image .2s;
-    border: solid 1px transparent;
-}
-
-.btn-design:link,
-.btn-design:visited {
-    border: solid 1px #fcfcfc;
-    text-decoration: none;
-    color: #fcfcfc;
-    padding: 10px 18px;
-}
-
-.btn-design:hover,
-.btn-design:active {
-    background-color: #fcfcfc;
-    color: #d32d1f;
-    transition:  background-color .2s;
-    border: solid 1px transparent;
-}
 
 /* -------------- DESIGN SECTION ------------------*/
 /* -----------------------------------------*/
@@ -476,6 +426,10 @@ li a:focus {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 800px), (orientation:portrait) {
+        
+}
+
 /* -------------- LAYOUT GRID ------------------*/
 /* -----------------------------------------*/
 
@@ -537,3 +491,4 @@ footer .row {
     background-color: #d32d1f;
     margin-top: 40px;
 }
+
