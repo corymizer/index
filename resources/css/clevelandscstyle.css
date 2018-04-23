@@ -1,0 +1,45 @@
+
+.header-title {
+    position: absolute;
+    width:75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.demo-btn {
+    position: absolute;
+    top: 475px;
+    left: 270px;
+}
+
+.demo-btn:link {
+    color: #d32d1f;
+    border: 1px solid #d32d1f;
+    padding: 10px;
+}
+
+.demo-btn:visited {
+    color: #d32d1f;
+    border: 1px solid #d32d1f;
+    padding: 10px;
+}
+
+
+.demo-btn:active,
+.demo-btn:hover {
+    text-decoration: none;
+    background-image: linear-gradient(#c64c1f,#d32d1f);
+    color: #fcfcfc;
+    border: solid 1px transparent;
+}
+
+.csc-description {
+    width: 60%;
+    color: #d32d1f;
+    font-size: 1.4rem;
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+}

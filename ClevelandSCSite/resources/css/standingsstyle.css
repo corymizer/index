@@ -1,0 +1,38 @@
+/* -------------- HEADER ------------------*/
+/* ----------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../images/headers/headerstandings.jpg);
+}
+
+.npsl-logo {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top:40px;
+}
+
+thead {
+    font-size: 1.75rem;
+    font-family: "ddcHardware";
+}
+
+td, th, tr {
+    padding: 20px;
+    /*border: 1px solid black;*/
+}
+
+.center-text {
+    text-align: center;
+}
+
+.alt-background {
+    background-color: #efefef;
+}
+
+.small-logo {
+    width: auto;
+    height: 4%;
+    padding-right: 10px;
+}
