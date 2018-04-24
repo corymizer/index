@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cory Mizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap-->
+        <link href="resources/css/style.css" rel='stylesheet' type='text/css'> <!--My Style Sheet-->
+        <link href="resources/css/ionicons.css" rel='stylesheet' type="text/css"> <!--Icon Font-->
+        <link href="resources/css/ionicons.min.css" rel='stylesheet' type="text/css"> <!--Icon Min Font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet"> <!--Monserrat Font-->
+        <script href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Jquery-->
+        <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootstrap-->
+    </head>
+    
+    <body>
+        <header>
+            <div class='row'>
+                <div class='col-lg-6 color-block'>
+                    <div class='header-text'>
+                        <h1 id='header-text' class="title-text">ILLUSTRATIONS</h1>
+                    </div>
+                </div>
+                <div class='col-lg-6 white-block'>
+                    <a href="#menu" id="toggle"><span></span></a>
+                        <div id="menu">
+                          <ul>
+                            <li><a href="index.html">Home</a></li>
+                          </ul>
+                        </div>
+                    <p id='description'>A series of illustrations: Both commissioned work and part of a drawing a day challenge I did to improve my illustration skills. </p>
+                </div>
+            </div>
+            <script src="resources/javascript/toggle.js"></script>
+        </header>
+        
+        <section class='project-photos'>
+            <div class="row-photo">
+                  <div class="container">
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      <img id="expandedImg" style="width:100%">
+                      <div id="imgtext"></div>
+                  </div>
+                
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/gator.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/koala.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/penguins.png" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/spacecat.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+            </div>
+            <div class="row-photo">
+                
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/sugarskull.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/westside.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/stormtrooper.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="col-lg-3 photo-col">
+                    <img src="resources/images/skateordie.jpg" style="width:100%" onclick="myFunction(this);">
+                  </div>
+            </div>
+
+                <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+                </script>
+        </section>
+        <footer>
+            <div class='row'>
+                <div class='col-lg-12'>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+
+</html>
