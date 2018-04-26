@@ -5,7 +5,9 @@
         <title>Cory Mizer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap-->
+        <link rel="stylesheet" href="resources/css/lightbox.css"> <!--Lightbox-->
         <link href="resources/css/style.css" rel='stylesheet' type='text/css'> <!--My Style Sheet-->
+        <link href="resources/css/signsstyle.css" rel='stylesheet' type='text/css'> <!--My Style Sheet-->
         <link href="resources/css/ionicons.css" rel='stylesheet' type="text/css"> <!--Icon Font-->
         <link href="resources/css/ionicons.min.css" rel='stylesheet' type="text/css"> <!--Icon Min Font-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet"> <!--Monserrat Font-->
@@ -28,58 +30,45 @@
                             <li><a href="index.html">Home</a></li>
                           </ul>
                         </div>
-                    <p id='description'>A series of illustrations: Both commissioned work and part of a drawing a day challenge I did to improve my illustration skills. </p>
+                    <p id='description'>This is a series of illustrations done for both client work and to stay sharp. Illustration is one of the things I love that I don't generally get to do at my every day job. With that in mind, I've taken to drawing up a random image every day to just stay sharp and keep that creative edge. </p>
                 </div>
             </div>
             <script src="resources/javascript/toggle.js"></script>
         </header>
         
         <section class='project-photos'>
-            <div class="row-photo">
-                  <div class="container">
-                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                      <img id="expandedImg" style="width:100%">
-                      <div id="imgtext"></div>
-                  </div>
-                
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/gator.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/koala.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/penguins.png" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/spacecat.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
+            
+            <div class="row row-photo">
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/illustrations/gator.jpg" data-lightbox="example-set" data-title="Gator Illustration"><img class="lb-image" src="resources/images/illustrations/gatorthumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/illustrations/koala.jpg" data-lightbox="example-set" data-title="Koala Illustration"><img class="lb-image" src="resources/images/illustrations/koalathumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/illustrations/penguins.png" data-lightbox="example-set" data-title="Penguin Illustration"><img class="lb-image" src="resources/images/illustrations/penguinsthumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/illustrations/spacecat.jpg" data-lightbox="example-set" data-title="Space Cat Illustration"><img class="lb-image" src="resources/images/illustrations/spacecatthumb.jpg" alt=""/></a>
+                </div>  
             </div>
-            <div class="row-photo">
-                
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/sugarskull.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/westside.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/stormtrooper.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/skateordie.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
+            <div class="row row-photo">
+                <div class='col-lg-6'>
+                  <a class="example-image-link" href="resources/images/illustrations/sugarskull.jpg" data-lightbox="example-set" data-title="Skull Illustration"><img class="lb-image" src="resources/images/illustrations/sugarskullthumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-6'>
+                  <a class="example-image-link" href="resources/images/illustrations/skateordie.jpg" data-lightbox="example-set" data-title="Skate or Die Illustration"><img class="lb-image" src="resources/images/illustrations/skateordiethumb.jpg" alt=""/></a>
+                </div> 
             </div>
-
-                <script>
-                function myFunction(imgs) {
-                    var expandImg = document.getElementById("expandedImg");
-                    var imgText = document.getElementById("imgtext");
-                    expandImg.src = imgs.src;
-                    imgText.innerHTML = imgs.alt;
-                    expandImg.parentElement.style.display = "block";
-                }
-                </script>
+            <div class="row row-photo">
+                <div class='col-lg-6'>
+                  <a class="example-image-link" href="resources/images/illustrations/stormtrooper.jpg" data-lightbox="example-set" data-title="Storm Trooper Illustration"><img class="lb-image" src="resources/images/illustrations/stormtrooperthumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-6'>
+                  <a class="example-image-link" href="resources/images/illustrations/westside.jpg" data-lightbox="example-set" data-title="Skate or Die Illustration"><img class="lb-image" src="resources/images/illustrations/westsidethumb.jpg" alt=""/></a>
+                </div> 
+            </div>
+            <script src="resources/javascript/lightbox-plus-jquery.js"></script>
         </section>
         <footer>
             <div class='row'>

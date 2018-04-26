@@ -5,7 +5,9 @@
         <title>Cory Mizer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Bootstrap-->
+        <link rel="stylesheet" href="resources/css/lightbox.css"> <!--Lightbox-->
         <link href="resources/css/style.css" rel='stylesheet' type='text/css'> <!--My Style Sheet-->
+        <link href="resources/css/signsstyle.css" rel='stylesheet' type='text/css'> <!--My Style Sheet-->
         <link href="resources/css/ionicons.css" rel='stylesheet' type="text/css"> <!--Icon Font-->
         <link href="resources/css/ionicons.min.css" rel='stylesheet' type="text/css"> <!--Icon Min Font-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet"> <!--Monserrat Font-->
@@ -35,36 +37,26 @@
         </header>
         
         <section class='project-photos'>
-            <div class="row-photo">
-                  <div class="container">
-                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                      <img id="expandedImg" style="width:100%">
-                      <div id="imgtext"></div>
-                  </div>
-                
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/fulltime.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/traininggear.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/goal.gif" style="width:100%" onclick="myFunction(this);">
-                  </div>
-                  <div class="col-lg-3 photo-col">
-                    <img src="resources/images/seasontickets.jpg" style="width:100%" onclick="myFunction(this);">
-                  </div>
+            
+            
+            <div class="row row-photo">
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/clevelandsc/fulltime.jpg" data-lightbox="example-set" data-title="Full Time Gameday Graphic For Cleveland SC Social Media"><img class="lb-image" src="resources/images/clevelandsc/fulltimethumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/clevelandsc/goal.gif" data-lightbox="example-set" data-title="Goal GIF Used For Cleveland SC Social Media"><img class="lb-image" src="resources/images/clevelandsc/goalthumb.gif" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/clevelandsc/seasontickets.jpg" data-lightbox="example-set" data-title="Season Ticket Graphic For Cleveland SC Social Media"><img class="lb-image" src="resources/images/clevelandsc/seasonticketsthumb.jpg" alt=""/></a>
+                </div>
+                <div class='col-lg-3'>
+                  <a class="example-image-link" href="resources/images/clevelandsc/traininggear.jpg" data-lightbox="example-set" data-title="Training Gear Used For Cleveland SC Social Media"><img class="lb-image" src="resources/images/clevelandsc/traininggearthumb.jpg" alt=""/></a>
+                </div>  
             </div>
+                  
+                
+                  <script src="resources/javascript/lightbox-plus-jquery.js"></script>
 
-                <script>
-                function myFunction(imgs) {
-                    var expandImg = document.getElementById("expandedImg");
-                    var imgText = document.getElementById("imgtext");
-                    expandImg.src = imgs.src;
-                    imgText.innerHTML = imgs.alt;
-                    expandImg.parentElement.style.display = "block";
-                }
-                </script>
         </section>
         <footer>
             <div class='row'>
