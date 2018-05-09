@@ -19,7 +19,7 @@
 }
 
 .col-lg-3 {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .click-photos {
@@ -44,4 +44,8 @@
 #project-description {
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+section {
+   padding-top: 20px;
 }
