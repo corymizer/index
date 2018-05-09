@@ -1,0 +1,51 @@
+.project-photos .row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#header-title {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    background-color: #d32d1f;
+    height: 2px;
+    width: 400px;
+    margin: 0 auto 25px auto;
+    
+}
+
+.col-lg-3 {
+    margin-top: 20px;
+}
+
+.click-photos {
+    margin-top: 20px;
+}
+
+.col-lg-3:hover {
+    transform: scale(1.05);
+    transition: scale 1s;
+}
+
+.col-lg-6 img {
+    width: 100%;
+    height: auto;
+}
+
+.col-lg-6 img:hover {
+   transform: scale(1.05);
+    transition: scale 1s;
+}
+
+#project-description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+section {
+   padding-top: 20px;
+}
